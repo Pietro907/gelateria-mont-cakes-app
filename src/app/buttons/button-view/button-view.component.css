@@ -1,0 +1,10 @@
+.example-button-row button,
+.example-button-row a {
+  margin: 1rem 0;
+}
+.example-button-row a{
+  color: white; background: rgba(161, 67, 228, 0.837);
+}
+.example-disabled {
+  display: inline-block;
+}

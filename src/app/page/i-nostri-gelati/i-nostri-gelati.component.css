@@ -1,0 +1,35 @@
+body{
+    background-image: url('../../../assets/img/sfondo_home.jpg');
+    background-size: cover;
+  }
+  .i_nostri_gelati{
+      padding: 5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .img_i_nostri_gelati{
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+  }
+  
+  .descrizione_i_nostri_gelati > h2 {
+    color: pink;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .descrizione_i_nostri_gelati > h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .descrizione_i_nostri_gelati > p {
+    color: grey;
+  }
+  .descrizione_i_nostri_gelati{
+      max-width: 400px;
+      padding: 0 2rem;;
+  }
+  

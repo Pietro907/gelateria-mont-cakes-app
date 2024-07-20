@@ -1,0 +1,35 @@
+body{
+    background-image: url('../../../assets/img/sfondo_home.jpg');
+    background-size: cover;
+  }
+  .le_torte{
+      padding: 5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .img_le_torte{
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+  }
+  
+  .descrizione_le_torte > h2 {
+    color: pink;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .descrizione_le_torte > h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .descrizione_le_torte > p {
+    color: grey;
+  }
+  .descrizione_le_torte{
+      max-width: 400px;
+      padding: 0 2rem;;
+  }
+  

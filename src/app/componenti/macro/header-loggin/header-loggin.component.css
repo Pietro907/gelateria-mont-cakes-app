@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header > .burger,
+  header > .logo,
+  header > nav,
+  header > nav > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header > .logo > img {
+    width: 100px;
+  }
+  
+  header > nav > li {
+    list-style: none;
+  }
+  header > nav > li > ul {
+    padding: 0 10px;
+  }
+  .burger {
+    padding: 1rem;
+    margin: 0 10px;
+  }

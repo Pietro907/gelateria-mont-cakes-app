@@ -1,0 +1,58 @@
+body {
+  background-image: url("../../../assets/img/sfondo_home.jpg");
+  background-size: cover;
+}
+.vendita_prodotti {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_vendita {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.descrizione_vendita > h2 {
+  color: pink;
+  font-size: 30px;
+  font-weight: 600;
+}
+.descrizione_vendita > h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+.descrizione_vendita > p {
+  color: grey;
+}
+.descrizione_vendita {
+  max-width: 400px;
+  padding: 0 2rem;
+}
+.link_prodotti {
+  display: flex;
+  justify-content: center;
+}
+.torte {
+  width: 250px;
+  text-align: center;
+  & a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 900;
+  }
+}
+.torte {
+  background: url(../../../assets/img/cornice-prodotti.webp);
+  background-position: center;
+  margin: 0 1rem;
+  border-radius: 25px;
+}
+.img_torte {
+  width: 150px;
+  padding: 2rem;
+}
