@@ -28,6 +28,7 @@ const routes: Routes = [
 
     ],
   },
+  { path: '', component: HomeComponent },
   { path: 'chi_siamo', component: ChiSiamoComponent },
   { path: 'dove_siamo', component: DoveSiamoComponent },
   { path: 'i_nostri_gelati', component: INostriGelatiComponent },

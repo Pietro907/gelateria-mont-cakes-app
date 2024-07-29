@@ -1,27 +1,29 @@
-
 .top_menu {
   display: flex;
   justify-content: space-between;
 }
-.top_menu > .burger,
-.top_menu > .logo,
-.top_menu > nav,
-.top_menu > nav > li {
+
+.top_menu>.burger,
+.top_menu>.logo,
+.top_menu>nav,
+.top_menu>nav>li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.top_menu > .logo > img {
+.top_menu>.logo>img {
   width: 100px;
 }
 
-.top_menu > nav > li {
+.top_menu>nav>li {
   list-style: none;
 }
-.top_menu > nav > li > ul {
+
+.top_menu>nav>li>ul {
   padding: 0 10px;
 }
+
 .burger {
   padding: 1rem;
   margin: 0 10px;
@@ -32,51 +34,108 @@
   background-color: brown;
   height: 10px;
 }
+
 .top_menu2 {
   display: flex;
   justify-content: space-around;
-  background: rgb(5, 6, 22);
+  background: #272437;
   max-width: 100%;
 }
-.top_menu2 > .burger,
-.top_menu2 > .logo,
-.top_menu2 > nav,
-.top_menu2 > nav > li {
+
+.top_menu2>.burger,
+.top_menu2>.logo,
+.top_menu2>nav,
+.top_menu2>nav>li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo > img {
+.logo>img {
   width: 100%;
   height: 250px;
   margin: 0 0 -5px;
+  object-fit: cover;
+  object-position: bottom;
 }
 
-.top_menu2 > nav > li {
+.top_menu2>nav>li {
   list-style: none;
 }
-.top_menu2 > nav > li > ul {
+
+.top_menu2>nav>li>ul {
   padding: 0 10px;
 }
-.top_menu2> nav > li > ul > a{
+
+.top_menu2>nav>li>ul>a {
   text-decoration: none;
   color: white;
 }
-.burger {
-  padding: 1rem;
-  margin: 0 10px;
+
+/* region header */
+.left {
+  position: relative;
+  animation-name: move-right;
+  animation-duration: 4s;
 }
+
+@keyframes move-right {
+  0% {
+    right: 800px;
+    top: 0;
+  }
+
+  100% {
+    right: 0;
+    top: 0;
+  }
+}
+
+.right {
+  position: relative;
+  animation-name: move-left;
+  animation-duration: 4s;
+}
+
+@keyframes move-left {
+  0% {
+    left: 800px;
+    top: 0;
+  }
+
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+/* endregion header */
 
 /* region nav */
 
 /* endregion nav */
+
+
+/* region footer */
+
+footer {
+  background: #272437;
+  color: white;
+}
+.container_footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* end region footer */
 
 /* region debug */
 
 .debug_r {
   border: 2px dashed red;
 }
+
 .debug_b {
   border: 2px dashed blue;
 }

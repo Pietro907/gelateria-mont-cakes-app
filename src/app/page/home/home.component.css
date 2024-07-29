@@ -1,6 +1,8 @@
 body {
   background-image: url("../../../assets/img/sfondo_home.jpg");
   background-size: cover;
+  background-position-y: center;
+  height: 100vh;
 }
 .vendita_prodotti {
   padding: 5rem 0;
@@ -29,7 +31,7 @@ body {
   color: grey;
 }
 .descrizione_vendita {
-  max-width: 400px;
+  max-width: 500px;
   padding: 0 2rem;
 }
 .link_prodotti {
@@ -51,6 +53,18 @@ body {
   background-position: center;
   margin: 0 1rem;
   border-radius: 25px;
+  animation-name: enter;
+  animation-duration: 3s;
+  animation-timeline: view();
+}
+@keyframes enter {
+  0%{
+
+      transform: rotateY(-90deg);
+  }
+  100%{
+      transform: rotateY(0deg);
+  }
 }
 .img_torte {
   width: 150px;
