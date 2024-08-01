@@ -37,6 +37,9 @@ body {
 .link_prodotti {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 0;
+  padding-top: 2rem;
 }
 .torte {
   width: 250px;
