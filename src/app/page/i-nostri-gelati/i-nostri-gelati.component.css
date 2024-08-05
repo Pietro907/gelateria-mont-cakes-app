@@ -4,53 +4,139 @@ body {
   background-position-y: center;
   height: 100vh;
 }
-  .i_nostri_gelati{
-      padding: 5rem 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+.i_nostri_gelati {
+  padding: 5rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_i_nostri_gelati {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  animation-name: image;
+  animation-duration: 4s;
+}
+
+@keyframes image {
+  0% {
+    opacity: 0.1;
+    transform: rotateY(-90deg);
+
+    /* prova da piccolo a grande rotazione circolare */
+    /*     transform: rotateZ(-90deg);
+    width: 0;
+    height: 0; */
   }
-  
-  .img_i_nostri_gelati{
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
+
+  100% {
+    transform: rotateY(360deg);
+    
+    /* prova da piccolo a grande rotazione circolare */
+    /* transform: rotateZ(360deg);
+    width: 250px;
+    height: 250px; */
   }
-  
-  .descrizione_i_nostri_gelati > h2 {
-    color: pink;
-    font-size: 30px;
-    font-weight: 600;
-  }
-  .descrizione_i_nostri_gelati > h3 {
+}
+
+.descrizione_i_nostri_gelati>h2 {
+  color: pink;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.descrizione_i_nostri_gelati>h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.descrizione_i_nostri_gelati>p {
+  color: grey;
+}
+
+.descrizione_i_nostri_gelati {
+  max-width: 600px;
+  padding: 0 2rem;
+  ;
+}
+
+/* region prodotti */
+
+.prodotti {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+}
+
+.card>img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* end region prodotti */
+
+.link_prodotti {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.lattosio,
+.senza_lattosio {
+  width: 250px;
+  text-align: center;
+
+  & a {
+    text-decoration: none;
     color: black;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: large;
+    font-weight: 900;
   }
-  .descrizione_i_nostri_gelati > p {
-    color: grey;
+
+  & a:hover {
+    color: rgb(144, 0, 24);
+    text-decoration: underline;
   }
-  .descrizione_i_nostri_gelati{
-      max-width: 400px;
-      padding: 0 2rem;;
+}
+
+.lattosio,
+.senza_lattosio {
+  background: url(../../../assets/img/cornice-prodotti.webp);
+  background-position: center;
+  margin: 0 1rem;
+  border-radius: 25px;
+  animation-name: enter;
+  animation-timeline: scroll();
+  animation-duration: 4s;
+  opacity: 0;
+}
+
+@keyframes enter {
+  0% {
+    transform: rotateY(-90deg);
   }
-   /* region prodotti */
-   
-   .prodotti{
-    max-width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-   }
-   .card{
-    width: 150px;
-    height: 150px;
-   }
-   .card > img {
-    width: 100%;
-    height: 100%;
+
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
   }
- 
-   
-   /* end region prodotti */
+}
+
+.img_gusti {
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 2rem 1rem;
+}
