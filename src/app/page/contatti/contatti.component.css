@@ -26,3 +26,15 @@ body {
   max-width: 400px;
   padding: 0 2rem;
 }
+
+/*  */
+
+.text-muted{
+  color: rgb(167, 166, 166);
+}
+textarea{
+  width: 300px;
+  height: 100px;
+}
+
+/*  */

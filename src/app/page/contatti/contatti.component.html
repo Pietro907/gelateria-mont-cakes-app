@@ -2,6 +2,7 @@
 
     <div class="contatti">
         <div class="descrizione_contatti">
+            
             <h2>GELATERIE A ROMA</h2>
             <h3>Produzione artigianale di gelato e di prodotti dolciari a Roma Nord</h3>
             <p>
@@ -42,48 +43,57 @@
             </ul>
             <h3>CONTATTI</h3>
             <p>* Campi obbligatori</p>
-            <form action="" method="post">Nome</form>
-            <form action="" method="post">Cognome</form>
-            <form action="" method="post">Email</form>
-            <form action="" method="post">Telefono</form>
-            <form action="" method="post">Messaggio</form>
-            <div class="form-check">
-                <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id=""
-                    checked
-                    />
-                    <label class="form-check-label" for=""> Ho letto l'informativa e autorizzo il trattamento dei miei dati personali per le finalità ivi indicate. </label>
+
+            <form action="" method="post">
+                
+                <!-- form inserisci il nome -->
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label> <br>
+                    <input type="text" name="nome" id="nome" class="form-control" placeholder="Es: Marco"
+                        aria-describedby="helpId" /> <br>
+                    <small id="helpId" class="text-muted">inserisci il tuo nome</small>
                 </div>
-                <button>invia</button>
-            
+                <!-- form inserisci il cognome -->
+                <div class="mb-3">
+                    <label for="cognome" class="form-label">Cognome</label> <br>
+                    <input type="text" name="cognome" id="cognome" class="form-control" placeholder="Es: Rossi"
+                        aria-describedby="helpId" /> <br>
+                    <small id="helpId" class="text-muted">inserisci il tuo cognome</small>
+                </div>
+                <!-- form inserisci l'email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label> <br>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Es: marco.rossi@gmail.com"
+                        aria-describedby="helpId" /> <br>
+                    <small id="helpId" class="text-muted">inserisci la tua email</small>
+                </div>
+                <!-- form inserisci il numero telefonico -->
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Numero telefonico</label> <br>
+                    <input type="number" name="telefono" id="telefono" class="form-control" placeholder="Es: +391234567890"
+                        aria-describedby="helpId" /> <br>
+                    <small id="helpId" class="text-muted">inserisci il numero di telefono</small>
+                </div>
+                <!-- form inserisci il messaggio -->
+                <div class="mb-3">
+                    <label for="messaggio" class="form-label">Messaggio</label> <br>
+                    <textarea type="textare" name="messaggio" id="messaggio" class="form-control" placeholder="Scrivi..."
+                        aria-describedby="helpId" ></textarea> <br>
+                    <small id="helpId" class="text-muted">inserisci il messaggio</small>
+                </div>
+
+            </form>
+
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked />
+                <label class="form-check-label" for=""> Ho letto l'informativa e autorizzo il trattamento dei miei dati
+                    personali per le finalità ivi indicate. </label>
+            </div>
+            <button>invia</button>
+
         </div>
     </div>
-    
+
 </body>
 
-
-
-
-
-
-
-
-
-
-<!-- form -->
-Nome
-Inserisci il tuo nome
-Cognome
-Inserisci il tuo cognome
-*E-mail
-es: email mail.com
-Telefono
-es: +3912345678
-*Messaggio
-<!-- end form -->
-<!-- checkbox -->
-Ho letto l'informativa e autorizzo il trattamento dei miei dati personali per le finalità ivi indicate.
-<!-- button invia form -->

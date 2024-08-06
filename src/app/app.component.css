@@ -128,12 +128,16 @@ header{
 footer {
   background: #272437;
   color: white;
+  padding: 10px;
 }
 .container_footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  & h3, p{
+    margin: 5px 0 0;
+  }
 }
 /* end region footer */
 
