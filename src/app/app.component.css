@@ -31,11 +31,6 @@ header{
   padding: 0 10px;
 }
 
-.burger {
-  padding: 1rem;
-  margin: 0 10px;
-}
-
 /* header loggin */
 .pre_top_menu2 {
   background-color: brown;
@@ -60,11 +55,13 @@ header{
 
 .logo>img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   margin: 0 0 -5px;
   object-fit: contain;
   background-color: #FFF;
 }
+
+/* region header nav */
 
 .top_menu2>nav>li {
   list-style: none;
@@ -78,8 +75,6 @@ header{
   text-decoration: none;
   color: white;
 }
-
-/* region header */
 .left {
   position: relative;
   animation-name: move-right;

@@ -12,6 +12,7 @@ body {
   background: white;
   margin: 0 auto;
   opacity: 0.9;
+  border-radius: 200px;
 }
 
 .i_nostri_gelati {
@@ -72,7 +73,6 @@ body {
 .descrizione_i_nostri_gelati {
   max-width: 600px;
   padding: 0 2rem;
-  ;
 }
 
 /* region prodotti */

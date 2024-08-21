@@ -1,12 +1,26 @@
 body{
-    background-image: url('../../../assets/img/sfondo_home.jpg');
-    background-size: cover;
+  background-image: url("../../../assets/img/5542825.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  padding: 0 0 5px;
+  }
+  .background {
+    max-width: 1000px;
+    height: 400px;
+    background: white;
+    margin: 0 auto;
+    opacity: 0.9;
+    border-radius: 200px;
   }
   .le_torte{
       padding: 5rem 0;
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      top: -450px;
+      left: 0;
   }
   
   .img_le_torte{
@@ -16,7 +30,7 @@ body{
   }
   
   .descrizione_le_torte > h2 {
-    color: pink;
+    color: brown;
     font-size: 30px;
     font-weight: 600;
   }
@@ -26,10 +40,10 @@ body{
     font-weight: 500;
   }
   .descrizione_le_torte > p {
-    color: grey;
+    color: rgb(68, 68, 68);
   }
   .descrizione_le_torte{
-      max-width: 400px;
-      padding: 0 2rem;;
+    max-width: 600px;
+    padding: 0 2rem;;
   }
   

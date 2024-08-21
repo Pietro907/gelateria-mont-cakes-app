@@ -1,9 +1,19 @@
 body {
-  background-image: url("../../../assets/img/sfondo_home.jpg");
+  background-image: url("../../../assets/img/5542825.jpg");
   background-size: cover;
   background-position-y: center;
-  height: 100vh;
+  height: calc(100vh + 7rem);
+  z-index: -1;
 }
+/* .background {
+  max-width: 1000px;
+  height: 400px;
+  background: url(../../../assets/img/DC_2-scaled.jpg);
+  background-position: center;
+  margin: 0 auto;
+  opacity: 0.9;
+  z-index: 1;
+} */
 
 .vendita_prodotti {
   padding: 5rem 0;
@@ -14,52 +24,54 @@ body {
 }
 
 .img_vendita {
-  width: 950px;
-  height: 450px;
+  width: 1100px;
+  height: 550px;
   border-radius: 50%;
-  margin: 0 0 5rem;
-  padding: 13rem 0 0;
-  opacity: 0.4;
+  padding: 22rem 0 0;
+  margin: -5rem 0 5rem;
   position: absolute;
 }
-
+.descrizione_vendita {
+  max-width: 500px;
+  position: relative;
+  top: -35px;
+  left: -250px;
+}
+.background_descr_vendite{
+  width: 500px;
+  height: 150px;
+  position: relative;
+  top: -35px;
+  left: 250px;
+  background: white;
+  box-shadow: white 0 0 20px 30px;
+  border-radius: 50px;
+  opacity: 0.4;
+}
 .descrizione_vendita>h2 {
   color: brown;
   font-size: 30px;
   font-weight: 700;
-  position: relative;
-  top: 40px;
-  left: 50px;
 }
 
 .descrizione_vendita>h3 {
   color: black;
   font-size: 20px;
   font-weight: 500;
-  position: relative;
-  top: 40px;
-  left: 50px;
 }
 
 .descrizione_vendita>p {
-  color: black;
-  position: relative;
-  top: 40px;
-  left: 50px;
+  color: rgb(68, 68, 68);
   font-weight: 600;
 }
 
-.descrizione_vendita {
-  max-width: 500px;
-  padding: 0 2rem;
-}
 
 .link_prodotti {
   display: flex;
   justify-content: center;
   position: relative;
   z-index: 0;
-  padding-top: 6rem;
+  padding-top: 12rem;
 }
 
 .torte {
