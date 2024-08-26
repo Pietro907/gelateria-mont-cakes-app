@@ -16,7 +16,8 @@ body {
 }
 
 .i_nostri_gelati {
-  padding: 5rem 0 1rem;
+  margin: 1rem 0 0;
+  padding: 5rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;

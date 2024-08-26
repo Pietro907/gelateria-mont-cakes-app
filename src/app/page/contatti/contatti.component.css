@@ -1,11 +1,12 @@
 body {
-  background-image: url("../../../assets/img/sfondo_home.jpg");
+  background-image: url("../../../assets/img/5542825.jpg");
   background-size: cover;
+  height: 100vh;
 }
 .contatti {
-  padding: 5rem 0;
+  padding: 5rem 0 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -19,21 +20,27 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
-.descrizione_contatti > p {
+.descrizione_contatti > p, .orari, .form_contatti {
   color: grey;
 }
 .descrizione_contatti {
   max-width: 400px;
   padding: 0 2rem;
 }
-
+.form_field{
+  display: flex;
+  justify-content: space-between;
+}
+.field_2,.form-check-label{
+  padding: 0 1rem 0 0;
+}
 /*  */
 
 .text-muted{
   color: rgb(167, 166, 166);
 }
 textarea{
-  width: 300px;
+  width: 250px;
   height: 100px;
 }
 

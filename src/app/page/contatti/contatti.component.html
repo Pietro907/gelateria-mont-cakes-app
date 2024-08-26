@@ -1,34 +1,32 @@
 <body>
 
     <div class="contatti">
+        <!-- primo container -->
         <div class="descrizione_contatti">
-            
+
             <h2>GELATERIE A ROMA</h2>
             <h3>Produzione artigianale di gelato e di prodotti dolciari a Roma Nord</h3>
-            <p>
-                Candy Cream è una gelateria artigianale che da oltre 20 anni soddisfa i suoi clienti con le sue delizie:
-                gelati squisiti, prelibate torte di ogni tipo da quelle decorate con pasta di zucchero alle più
-                tradizionali, ottimi yogurt, granite e pasticceria rigorosamente artigianale. Candy Cream è dislocato a
-                Roma Nord in tre punti vendita.
 
+
+            <p>
+                Candy Cream è una gelateria artigianale che soddisfa i suoi clienti con le sue
+                delizie:
+                gelati squisiti, prelibate torte di ogni tipo da quelle decorate con pasta di zucchero alle più
+                tradizionali, ottimi yogurt, granite e pasticceria rigorosamente artigianale.
             </p>
             <p>
-                Via Gregorio XI, 17/19 | 00166 - Roma | Tel. +39 06 66012162 | GELATERIA, PASTICCERIA , CAFFETTERIA E
-                BAR
-                Piazza Pietro thouar 41,42 | 00135 - Roma | Tel. +39 06 89836299 | GELATERIA (è possibile fare ordini
-                per TORTE DI
-                PASTICCERIA)
-                Via Tarsia, 65 | 00135 - Roma | Tel. +39 06 30813190 | GELATERIA (è possibile fare ordini per TORTE DI
-                PASTICCERIA)
-
-
-                Per avere ulteriori informazioni sui prodotti dolciari e sugli ingredienti utilizzati per la produzione
-                di gelato
-                artigianale, potete contattare Candy Cream Gelaterie telefonando ai numeri delle proprie sue sedi o
+                Per avere ulteriori informazioni sui prodotti e sugli ingredienti utilizzati per la
+                produzione potete contattare Mont Cakes Gelateria telefonando al numero della sede o
                 compilando il form
                 dei contatti quì in basso.
 
             </p>
+
+        </div>
+
+        <!-- secondo container -->
+        <!-- Orari attività -->
+        <div class="orari">
             <p>
                 ORARI DI APERTURA PER TUTTE E TRE LE GELATERIE
             </p>
@@ -41,59 +39,70 @@
                 <li> Sabato 06:00 - 23:00 </li>
                 <li> Domenica 06:00 - 22:30 </li>
             </ul>
+        </div>
+
+        <!-- terzo container -->
+        <!-- form contatti -->
+        <div class="form_contatti">
             <h3>CONTATTI</h3>
             <p>* Campi obbligatori</p>
 
-            <form action="" method="post">
-                
-                <!-- form inserisci il nome -->
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Nome</label> <br>
-                    <input type="text" name="nome" id="nome" class="form-control" placeholder="Es: Marco"
-                        aria-describedby="helpId" /> <br>
-                    <small id="helpId" class="text-muted">inserisci il tuo nome</small>
+            <form class="form_field" action="" method="post">
+
+                <div class="field_1">
+                    <!-- form inserisci il nome -->
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label> <br>
+                        <input type="text" name="nome" id="nome" class="form-control" placeholder="Es: Marco"
+                            aria-describedby="helpId" /> <br>
+
+                        <small id="helpId" class="text-muted">inserisci il tuo nome</small>
+                    </div>
+
+
+                    <!-- form inserisci il cognome -->
+                    <div class="mb-3">
+                        <label for="cognome" class="form-label">Cognome</label> <br>
+                        <input type="text" name="cognome" id="cognome" class="form-control" placeholder="Es: Rossi"
+                            aria-describedby="helpId" /> <br>
+                        <small id="helpId" class="text-muted">inserisci il tuo cognome</small>
+                    </div>
+                    <!-- form inserisci l'email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label> <br>
+                        <input type="email" name="email" id="email" class="form-control"
+                            placeholder="Es: marco.rossi@gmail.com" aria-describedby="helpId" /> <br>
+                        <small id="helpId" class="text-muted">inserisci la tua email</small>
+                    </div>
                 </div>
-                <!-- form inserisci il cognome -->
-                <div class="mb-3">
-                    <label for="cognome" class="form-label">Cognome</label> <br>
-                    <input type="text" name="cognome" id="cognome" class="form-control" placeholder="Es: Rossi"
-                        aria-describedby="helpId" /> <br>
-                    <small id="helpId" class="text-muted">inserisci il tuo cognome</small>
-                </div>
-                <!-- form inserisci l'email -->
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label> <br>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Es: marco.rossi@gmail.com"
-                        aria-describedby="helpId" /> <br>
-                    <small id="helpId" class="text-muted">inserisci la tua email</small>
-                </div>
-                <!-- form inserisci il numero telefonico -->
-                <div class="mb-3">
-                    <label for="telefono" class="form-label">Numero telefonico</label> <br>
-                    <input type="number" name="telefono" id="telefono" class="form-control" placeholder="Es: +391234567890"
-                        aria-describedby="helpId" /> <br>
-                    <small id="helpId" class="text-muted">inserisci il numero di telefono</small>
-                </div>
-                <!-- form inserisci il messaggio -->
-                <div class="mb-3">
-                    <label for="messaggio" class="form-label">Messaggio</label> <br>
-                    <textarea type="textare" name="messaggio" id="messaggio" class="form-control" placeholder="Scrivi..."
-                        aria-describedby="helpId" ></textarea> <br>
-                    <small id="helpId" class="text-muted">inserisci il messaggio</small>
+
+                <div class="field_2">
+                    <!-- form inserisci il numero telefonico -->
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Numero telefonico</label> <br>
+                        <input type="number" name="telefono" id="telefono" class="form-control"
+                            placeholder="Es: +391234567890" aria-describedby="helpId" /> <br>
+                        <small id="helpId" class="text-muted">inserisci il numero di telefono</small>
+                    </div>
+                    <!-- form inserisci il messaggio -->
+                    <div class="mb-3">
+                        <label for="messaggio" class="form-label">Messaggio</label> <br>
+                        <textarea type="textare" name="messaggio" id="messaggio" class="form-control"
+                            placeholder="Scrivi..." aria-describedby="helpId"></textarea> <br>
+                        <small id="helpId" class="text-muted">inserisci il messaggio</small>
+                    </div>
                 </div>
 
             </form>
 
-
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="" checked />
-                <label class="form-check-label" for=""> Ho letto l'informativa e autorizzo il trattamento dei miei dati
-                    personali per le finalità ivi indicate. </label>
+                <label class="form-check-label" for=""> Ho letto l'informativa e autorizzo il trattamento dei miei
+                    dati
+                    personali per le finalità indicate. </label>
             </div>
             <button>invia</button>
 
         </div>
     </div>
-
 </body>
-
