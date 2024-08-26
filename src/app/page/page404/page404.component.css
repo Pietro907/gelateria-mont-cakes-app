@@ -7,6 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     background: -webkit-linear-gradient(left, rgb(255, 0, 0), rgb(53, 0, 0));
+    background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* implementare animazione */
