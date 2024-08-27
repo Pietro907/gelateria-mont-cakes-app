@@ -1,8 +1,18 @@
-body{
+body {
     height: 100vh;
+    background: #272437;
 }
+
+.bg_content {
+    width: 436px;
+    margin: 8rem auto 0;
+    padding: 5rem 0;
+    border-radius: 50%;
+    background: #272437fa;
+}
+
 .content {
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,10 +20,69 @@ body{
     background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    z-index: 1;
     /* implementare animazione */
 }
 
 span {
     text-align: center;
     font-size: 100px;
+    padding: 2rem 0;
+    animation-name: font;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes font {
+    0%{
+        font-size: 1px;
+    }
+    50%{
+        font-size: 100px;
+    }
+    100%{
+        font-size: 1px;
+    }
+}
+
+/* background animation bubble */
+
+.background {
+    display: flex;
+
+}
+
+.bubble {
+    margin: 0 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(81, 203, 255, 0.500);
+    box-shadow: 0 0 20px rgb(81, 203, 255),
+        0 0 50px rgb(81, 203, 255),
+        0 0 100px rgb(81, 203, 255);
+    position: relative;
+    animation-name: bubble-up;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: calc(0.5s * var(--i));
+    z-index: 0;
+}
+
+@keyframes bubble-up {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1)
+    }
+}
+
+.background .bubble:nth-child(even) {
+    background: rgba(197, 0, 0, 0.500);
+    box-shadow: 0 0 10px rgb(197, 0, 0),
+        0 0 50px rgb(255, 0, 0),
+        0 0 100px rgb(255, 0, 0);
 }

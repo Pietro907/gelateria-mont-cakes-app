@@ -11,8 +11,8 @@ import { ContattiComponent } from './page/contatti/contatti.component';
 
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: '/homepage'},
-  {path: 'homepage', component:HomeComponent},
+  { path: '', pathMatch: 'full', redirectTo: '/homepage' },
+  { path: 'homepage', component:HomeComponent },
   { path: '', component: HomeComponent },
   { path: 'chi_siamo', component: ChiSiamoComponent },
   { path: 'dove_siamo', component: DoveSiamoComponent },
