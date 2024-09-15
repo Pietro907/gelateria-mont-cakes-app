@@ -23,6 +23,9 @@ import { INostriGelatiComponent } from './page/i-nostri-gelati/i-nostri-gelati.c
 import { LeTorteComponent } from './page/le-torte/le-torte.component';
 import { PasticceriaComponent } from './page/pasticceria/pasticceria.component';
 import { ContattiComponent } from './page/contatti/contatti.component';
+import { LattosioComponent } from './page/i-nostri-gelati/lattosio/lattosio.component';
+import { SenzaLattosioComponent } from './page/i-nostri-gelati/senza-lattosio/senza-lattosio.component';
+import { CardComponent } from './componenti/card/card.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import { ContattiComponent } from './page/contatti/contatti.component';
     LeTorteComponent,
     PasticceriaComponent,
     ContattiComponent,
+    LattosioComponent,
+    SenzaLattosioComponent,
+    CardComponent,
 
   ],
   imports: [

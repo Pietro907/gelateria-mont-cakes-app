@@ -8,6 +8,8 @@ import { INostriGelatiComponent } from './page/i-nostri-gelati/i-nostri-gelati.c
 import { LeTorteComponent } from './page/le-torte/le-torte.component';
 import { PasticceriaComponent } from './page/pasticceria/pasticceria.component';
 import { ContattiComponent } from './page/contatti/contatti.component';
+import { LattosioComponent } from './page/i-nostri-gelati/lattosio/lattosio.component';
+import { SenzaLattosioComponent } from './page/i-nostri-gelati/senza-lattosio/senza-lattosio.component';
 
 
 const routes: Routes = [
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'chi_siamo', component: ChiSiamoComponent },
   { path: 'dove_siamo', component: DoveSiamoComponent },
   { path: 'i_nostri_gelati', component: INostriGelatiComponent },
+  { path: 'lattosio', component: LattosioComponent },
+  { path: 'i_nostri_gelati/senza_lattosio', component: SenzaLattosioComponent },
   { path: 'le_torte', component: LeTorteComponent },
   { path: 'pasticceria', component: PasticceriaComponent },
   { path: 'contatti', component: ContattiComponent },

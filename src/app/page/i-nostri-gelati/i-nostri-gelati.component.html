@@ -1,7 +1,8 @@
 <body>
-
+    
     <div class="background"></div>
     <div class="i_nostri_gelati">
+        <router-outlet></router-outlet>
         <img class="img_i_nostri_gelati" src="../../../assets/img/DC_16-scaled.jpg" alt="">
         <div class="descrizione_i_nostri_gelati">
             <h2>GELATI ARTIGIANALI</h2>
@@ -28,16 +29,17 @@
             <img class="img_gusti" src="../../../assets/img/card-logo/logo-latte.jpg"
                 alt="">
             <br>
-            <a href="gusti_lattosio">LATTOSIO</a>
+            <a href="lattosio">LATTOSIO</a>
         </div>
 
         <div class="senza_lattosio">
             <img class="img_gusti" src="../../../assets/img/card-logo/logo-soia.jpg"
                 alt="">
             <br>
-            <a href="gusti_ senza_lattosio">SENZA LATTOSIO</a>
+            <a routerLink="senza_lattosio">SENZA LATTOSIO</a>
         </div>
     </div>
+
 
 
 </body>
