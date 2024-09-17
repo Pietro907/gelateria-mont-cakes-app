@@ -1,1 +1,20 @@
-<p>card works!</p>
+<div *ngFor="let item of list">
+
+
+
+    <div class="img_big">
+        <img src="../../../assets/img/le-torte-gelato.jpg" alt="">
+    </div>
+
+    <div class="under_img_big">
+        <div class="img_small">
+            <img src="../../../assets/img/le-torte-gelato.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>title</h3>
+            <h6> {{item}}</h6>
+            <h6>ingredienti: ingrediente1, ingrediente2, ingrediente3, ingrediente4 ,ingrediente5</h6>
+        </div>
+    </div>
+    
+</div>

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
+  list: string[] = ['fragola', 'cioccolato', 'limone'];
 
 }

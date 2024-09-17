@@ -1,0 +1,78 @@
+body {
+    background-image: url("../../../../assets/img/5542825.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    padding: 0 0 5px;
+}
+
+.link_prodotti {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -400px;
+    left: 0;
+}
+
+.lattosio,
+.senza_lattosio {
+    width: 250px;
+    text-align: center;
+
+    & a {
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        font-weight: 900;
+    }
+}
+
+.lattosio:hover {
+    & a {
+        color: #00c5ff;
+        text-decoration: underline;
+    }
+}
+
+.senza_lattosio:hover {
+    & a {
+        color: brown;
+        text-decoration: underline;
+    }
+
+}
+
+.lattosio,
+.senza_lattosio {
+    background: url(../../../../assets/img/cornice-prodotti.webp);
+    background-position: center;
+    margin: 1rem 1rem 0;
+    border-radius: 25px;
+    animation-name: enter;
+    animation-duration: 4s;
+}
+
+@keyframes enter {
+    0% {
+        transform: rotateY(-90deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.lattosio {
+    box-shadow: #00c5ff 0px 0px 30px 15px;
+}
+
+.senza_lattosio {
+    box-shadow: brown 0px 0px 30px 15px;
+}
+
+.img_gusti {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 2rem 1rem;
+}

@@ -1,2 +1,26 @@
-<p>lattosio works!</p>
-<app-card></app-card>
+
+<div style="padding-top: 30rem;">
+
+
+
+    <div class="link_prodotti">
+
+        <div class="lattosio">
+            <img class="img_gusti" src="../../../../assets/img/card-logo/logo-latte.jpg" alt="">
+            <br>
+            <a routerLink="i_nostri_gelati/lattosio">LATTOSIO</a>
+        </div>
+
+        <div class="senza_lattosio">
+            <img class="img_gusti" src="../../../../assets/img/card-logo/logo-soia.jpg" alt="">
+            <br>
+            <a routerLink="senza_lattosio">SENZA LATTOSIO</a>
+        </div>
+    </div>
+</div>
+
+<app-card *ngFor="let item of list">
+    {{item}}
+</app-card>
+<!-- <body>
+</body> -->
