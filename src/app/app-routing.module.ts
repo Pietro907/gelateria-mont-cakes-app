@@ -21,9 +21,9 @@ const routes: Routes = [
   { path: 'i_nostri_gelati', component: INostriGelatiComponent,
     children: [
 
-      { path: 'i_nostri_gelati/lattosio', component: LattosioComponent },
     ]
-   },
+  },
+  { path: 'lattosio', component: LattosioComponent },
   { path: 'i_nostri_gelati/senza_lattosio', component: SenzaLattosioComponent },
   { path: 'le_torte', component: LeTorteComponent },
   { path: 'pasticceria', component: PasticceriaComponent },
