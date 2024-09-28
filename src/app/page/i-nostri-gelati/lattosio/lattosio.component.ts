@@ -25,7 +25,7 @@ export class LattosioComponent {
       elBigImg[index].classList.remove('img_close');
 
       setTimeout(() => {
-        elBigImg[index].style.transform = 'rotateX(150deg)';
+        elBigImg[index].style.transform = 'rotateX(102deg)';
       }, 500);
 
       console.log(this.isActive + ' è attivo');
