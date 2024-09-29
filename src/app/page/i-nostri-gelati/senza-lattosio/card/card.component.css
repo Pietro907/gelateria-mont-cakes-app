@@ -1,0 +1,57 @@
+.card_imgs, .img_big{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.card_imgs{
+    position: relative;
+    background: #fff;
+    margin: 2.5rem 0;
+}
+
+.img_big{
+    position: absolute;
+    top: 0;
+    left: 0;
+    perspective: 1000px;
+}
+
+.img_under_big{
+    width: 400px;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* #region animation open/close card */
+/* sono utilizzate nel file di lattosio.ts */
+
+.img_open{
+    transform-origin: center bottom;
+    animation: open 1s;
+}
+
+@keyframes open {
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(102deg);
+    }
+}
+
+.img_close{
+    transform-origin: bottom center;
+    animation: close 1s;
+}
+@keyframes close {
+    0%{
+        transform: rotateX(102deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+
+/* #endregion animation open/close card */
