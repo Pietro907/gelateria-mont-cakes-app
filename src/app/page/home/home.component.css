@@ -2,7 +2,7 @@ body {
   background-image: url("../../../assets/img/5542825.jpg");
   background-size: cover;
   background-position-y: center;
-  height: calc(100vh + 7rem);
+  height: calc(100vh + 10rem);
   z-index: -1;
 }
 /* .background {
