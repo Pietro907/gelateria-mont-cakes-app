@@ -1,8 +1,7 @@
 body {
     background-image: url("../../../../assets/img/5542825.jpg");
     background-size: cover;
-    background-position: bottom;
-    height: 100vh;
+    height: 100%;
     padding: 0 0 5px;
 }
 
@@ -10,20 +9,37 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    top: -400px;
+    top: 0;
     left: 0;
+    padding: 3rem 0 3rem;
 }
 
 .lattosio,
 .senza_lattosio {
     width: 250px;
     text-align: center;
+    background: url(../../../../assets/img/cornice-prodotti.webp);
+    background-position: center;
+    margin: 1rem 3rem 0;
+    border-radius: 25px;
+    animation-name: enter;
+    animation-duration: 2s;
 
     & a {
         text-decoration: none;
         color: black;
         font-size: large;
         font-weight: 900;
+    }
+}
+
+@keyframes enter {
+    0% {
+        transform: rotateY(-90deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
     }
 }
 
@@ -42,25 +58,7 @@ body {
 
 }
 
-.lattosio,
-.senza_lattosio {
-    background: url(../../../../assets/img/cornice-prodotti.webp);
-    background-position: center;
-    margin: 1rem 1rem 0;
-    border-radius: 25px;
-    animation-name: enter;
-    animation-duration: 4s;
-}
 
-@keyframes enter {
-    0% {
-        transform: rotateY(-90deg);
-    }
-
-    100% {
-        transform: rotateY(360deg);
-    }
-}
 
 .lattosio {
     box-shadow: #00c5ff 0px 0px 30px 15px;
@@ -77,15 +75,14 @@ body {
     padding: 2rem 1rem;
 }
 
-.container{
+.container {
     margin: 0 auto;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
-
