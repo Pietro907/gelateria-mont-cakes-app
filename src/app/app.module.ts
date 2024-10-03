@@ -25,7 +25,7 @@ import { PasticceriaComponent } from './page/pasticceria/pasticceria.component';
 import { ContattiComponent } from './page/contatti/contatti.component';
 import { LattosioComponent } from './page/i-nostri-gelati/lattosio/lattosio.component';
 import { SenzaLattosioComponent } from './page/i-nostri-gelati/senza-lattosio/senza-lattosio.component';
-import { CardComponent } from './componenti/card/card.component';
+import { CardComponent } from './page/i-nostri-gelati/lattosio/card/card.component';
 
 @NgModule({
   declarations: [
