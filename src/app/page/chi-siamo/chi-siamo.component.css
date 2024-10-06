@@ -4,26 +4,82 @@ body {
   background-position: bottom;
   height: 100vh;
   padding: 0 0 5px;
+  overflow-x: hidden;
 }
-#firstSection, #secondSection, #thirdSection{
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-}
-.title{
+
+#chi_siamo {
+  position: relative;
   width: 100%;
   height: 100%;
-  background: gray;
-  text-align: center;
-  padding: 1rem 0;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  & p{
-    margin: 0;
+}
+
+.section,
+.thank_you {
+  width: 100%;
+  height: 80vh;
+  /* background: gray;
+  border: 1px solid green; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  scroll-snap-align: start;
+
+}
+
+.title {
+  color: brown;
+  font-weight: 700;
+  margin: 0;
+  padding: 10rem;
+  /* border: 1px solid red; */
+  transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transform: scale(1);
+  z-index: 1;
+  opacity: 0;
+  background: #ffffffad;
+  box-shadow: #ffffffad 0px 0px 30px 40px;
+  border-radius: 35px;
+}
+
+.in_page {
+
+
+  & .title {
+    opacity: 1;
   }
 }
 
+.img_proprietario {
+  width: 400px;
+  border-radius: 35px;
+}
+
+.testo {
+  color: brown;
+  width: 500px;
+  background: #ffffffe9;
+  box-shadow: #ffffffe9 0px 0px 30px 40px;
+  border-radius: 35px;
+
+  & h1,
+  p {
+    text-align: center;
+    margin-bottom: 150px;
+    font-weight: 700;
+  }
+
+  & h1 {
+    font-size: 50px;
+
+  }
+  & p{
+    line-height: 1.3;
+    font-size: 18px;
+  }
+}
 
 .background {
   max-width: 1000px;

@@ -118,7 +118,7 @@ header{
 /* endregion nav */
 
 
-/* region footer */
+/* #region footer */
 
 footer {
   background: #272437;
@@ -134,7 +134,7 @@ footer {
     margin: 5px 0 0;
   }
 }
-/* end region footer */
+/* #endregion footer */
 
 /* region debug */
 
