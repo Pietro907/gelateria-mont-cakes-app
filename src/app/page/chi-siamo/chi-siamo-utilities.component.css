@@ -1,0 +1,21 @@
+
+/* #region header */
+
+.bkgr_gold{
+    background-color: #CCAA00;
+  }
+
+/* #endregion header */
+
+/* #region debug */
+
+.dbg_gray_green{
+  background: gray;
+  border: 1px solid green;
+}
+.dbg_gray_red{
+  background: gray;
+  border: 1px solid red;
+}
+
+/* #endregion debug */

@@ -4,8 +4,6 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  background-image: url("../assets/img/5542825.jpg");
-  background-size: cover;
-  background-position: bottom;
+main{
+  background: black;
 }
