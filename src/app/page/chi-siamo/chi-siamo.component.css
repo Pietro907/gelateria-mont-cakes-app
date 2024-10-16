@@ -1,7 +1,8 @@
 .bkgr_gold {
   background-color: #CCAA00;
 }
-.bg_img{
+
+.bg_img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -9,7 +10,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .section,
@@ -20,6 +21,10 @@
   height: 100vh;
   position: relative;
   z-index: 1;
+}
+
+#thirdSection {
+  padding: 0 0 8rem;
 }
 
 .title {
@@ -37,11 +42,12 @@
   position: absolute;
   transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+
 .section.in_page {
- & .title{
-  opacity: 1;
-  font-size: 50px;
- }
+  & .title {
+    opacity: 1;
+    font-size: 50px;
+  }
 }
 
 .img_proprietario {
@@ -53,8 +59,8 @@
   color: brown;
   width: 500px;
   height: 500px;
-  background: #ffffff78;
-  box-shadow: #ffffff78 0px 0px 30px 40px;
+  background: #ffffffe6;
+  box-shadow: #ffffffe6 0px 0px 30px 40px;
   border-radius: 35px;
   position: relative;
 
@@ -78,43 +84,52 @@
   }
 }
 
-.img_1{
+.img_1 {
   width: 400px;
   position: absolute;
   top: 20%;
   left: 40%;
 }
-.img_2{
+
+.img_2 {
   width: 200px;
-        position: absolute;
-        top: 1%;
-        left: 30%;
+  position: absolute;
+  top: 18%;
+  left: 28%;
 }
-.img_3{
+
+.img_3 {
   width: 200px;
-        position: absolute;
-        top: 4%;
-        left: 65%;
+  position: absolute;
+  top: 15%;
+  left: 60%;
 }
-.img_4{
+
+.img_4 {
   width: 200px;
-        position: absolute;
-        top: 75%;
-        left: 35%;
+  position: absolute;
+  top: 65%;
+  left: 35%;
 }
-.img_5{
+
+.img_5 {
   width: 200px;
-        position: absolute;
-        top: 52%;
-        left: 62%;
+  position: absolute;
+  top: 55%;
+  left: 65%;
 }
-.img_1, .img_2, .img_3, .img_4, .img_5{
+
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5 {
   border-radius: 15px;
 }
 
 
-.bg_title{
-  background: #ffffff78;
+.bg_title {
+  background: #ffffffe6;
   border-radius: 47%;
 }
 
@@ -126,8 +141,9 @@
   top: 40%;
   left: 0;
   box-shadow: #ffffffe9 0px 0px 0px 0px;
-
+  padding: 0 2rem;
 }
+
 .fnt_size {
   color: black;
   font-size: 30px;
@@ -136,4 +152,5 @@
   position: absolute;
   top: 40%;
   left: 2px;
+  padding: 0 2rem;
 }

@@ -5,5 +5,7 @@ body {
 }
 
 main{
-  background: black;
+  background: url(../assets/img/5542825.jpg);
+  background-size: cover;
+  background-position-y: bottom;
 }
