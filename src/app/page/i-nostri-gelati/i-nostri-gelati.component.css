@@ -1,14 +1,3 @@
-/* .bg_img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  object-position: bottom;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-} */
-
 
 .i_nostri_gelati {
   width: 100%;
@@ -155,65 +144,6 @@
     height: 250px; */
   }
 }
-
-/* .descrizione_i_nostri_gelati>h2 {
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.descrizione_i_nostri_gelati>p {
-  color: rgb(255 111 1);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-
-.descrizione_i_nostri_gelati {
-  max-width: 400px;
-  background: #ffffff78;
-  box-shadow: #ffffff78 0px 0px 30px 40px;
-  border-radius: 35px;
-}
-
-.dscr_left {
-  & .p_left {
-    text-align: left;
-    margin: 0 0 0;
-  }
-
-  & h2.fnt_size {
-    position: relative;
-  }
-
-  & h2.under_text {
-    color: brown;
-    position: relative;
-    top: -81px;
-    left: -1px;
-  }
-
-}
-
-.dscr_right {
-  margin: 6rem 0 0;
-
-  & .p_right {
-    text-align: right;
-  }
-
-  & h2.fnt_size {
-    position: relative;
-  }
-
-  & h2.under_text {
-    color: brown;
-    position: relative;
-    top: -49px;
-    left: -1px;
-  }
-} */
 
 
 /* region prodotti */
