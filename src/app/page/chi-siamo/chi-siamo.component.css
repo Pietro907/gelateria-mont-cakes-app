@@ -36,12 +36,6 @@
   opacity: 0;
   position: absolute;
   transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
-  /*   margin: 0;
-  padding: 10rem;
-  transform: scale(1);
-  background: #ffffffad;
-  box-shadow: #ffffffad 0px 0px 30px 40px;
-  border-radius: 35px; */
 }
 .section.in_page {
  & .title{

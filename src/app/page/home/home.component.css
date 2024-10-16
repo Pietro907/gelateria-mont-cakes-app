@@ -1,9 +1,19 @@
-body {
+/* body {
   background-image: url("../../../assets/img/5542825.jpg");
   background-size: cover;
   background-position-y: center;
   height: calc(100vh + 151px);
   z-index: -1;
+} */
+.bg_img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: bottom;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
 }
 
 .vendita_prodotti {
@@ -12,6 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .img_vendita {
@@ -22,13 +33,15 @@ body {
   margin: -5rem 0 5rem;
   position: absolute;
 }
+
 .descrizione_vendita {
   max-width: 500px;
   position: relative;
   top: -35px;
   left: -250px;
 }
-.background_descr_vendite{
+
+.background_descr_vendite {
   width: 500px;
   height: 150px;
   position: relative;
@@ -39,6 +52,7 @@ body {
   border-radius: 50px;
   opacity: 0.4;
 }
+
 .descrizione_vendita>h2 {
   color: brown;
   font-size: 30px;
@@ -62,8 +76,7 @@ body {
   justify-content: center;
   position: relative;
   z-index: 0;
-  padding-top: 12rem;
-  margin-bottom: 2rem;
+  padding: 12rem 0 2rem;
 }
 
 .torte {
@@ -77,11 +90,14 @@ body {
     font-weight: 900;
   }
 
-  & a:hover {
+}
+.torte:hover {
+  & a {
     color: rgb(144, 0, 24);
     text-decoration: underline;
   }
 }
+
 
 .torte {
   background: url(../../../assets/img/cornice-prodotti.webp);

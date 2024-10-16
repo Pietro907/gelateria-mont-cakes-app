@@ -1,34 +1,135 @@
-body {
-  background-image: url("../../../assets/img/5542825.jpg");
-  background-size: cover;
-  background-position: bottom;
+/* .bg_img {
+  width: 100%;
   height: 100vh;
-  padding: 0 0 5px;
-}
+  object-fit: cover;
+  object-position: bottom;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+} */
 
-.background {
-  max-width: 1000px;
-  height: 400px;
-  background: white;
-  margin: 0 auto;
-  opacity: 0.9;
-  border-radius: 200px;
-}
 
 .i_nostri_gelati {
-  margin: 1rem 0 0;
-  padding: 5rem 0 0;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: -450px;
-  left: 0;
+  background: url(../../../assets/img/5542825.jpg);
+  background-size: cover;
+  background-position-y: bottom;
 }
 
+.dscr_left,
+.dscr_right,
+.img_center {
+  /*   border: 1px solid red;
+  background-color: green; */
+  width: calc(100% / 3);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dscr_left {
+  align-items: start;
+}
+
+.img_center {
+  align-items: center;
+  & .dscr_card{
+    background: none;
+  }
+}
+
+.dscr_right {
+  align-items: end;
+}
+
+.dscr_card {
+  width: 80%;
+  height: calc(100% / 2);
+  background-color: #ffffffe6;
+  border-radius: 20px;
+  margin: 4rem 0;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dscr_left>.dscr_card {
+  & .title {
+    margin: 8rem 0 0;
+
+    & .front {
+      position: relative;
+      bottom: 48.5px;
+      left: 0px;
+      color: brown;
+    }
+
+    & .back {
+      position: relative;
+      bottom: 0;
+      left: 1px;
+    }
+  }
+  & .info {
+    & .front {
+      position: relative;
+      bottom: 112.5px;
+      left: 0px;
+      color: brown;
+    }
+  
+    & .back {
+      position: relative;
+      bottom: 0;
+      left: 1px;
+    }
+  }
+}
+.dscr_right>.dscr_card {
+  & .title {
+    margin: 8rem 0 0;
+
+    & .front {
+      position: relative;
+      bottom: 49px;
+      left: 0px;
+      color: brown;
+    }
+
+    & .back {
+      position: relative;
+      bottom: 0;
+      left: 1.5px;
+    }
+  }
+  & .info {
+    & .front {
+      position: relative;
+      bottom: 132.5px;
+      left: 0px;
+      color: brown;
+    }
+  
+    & .back {
+      position: relative;
+      bottom: 0;
+      left: 1.5px;
+    }
+  }
+}
+
+
 .img_i_nostri_gelati {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   animation-name: image;
   animation-duration: 4s;
@@ -55,26 +156,65 @@ body {
   }
 }
 
-.descrizione_i_nostri_gelati>h2 {
-  color: brown;
+/* .descrizione_i_nostri_gelati>h2 {
   font-size: 30px;
   font-weight: 600;
-}
-
-.descrizione_i_nostri_gelati>h3 {
-  color: black;
-  font-size: 20px;
-  font-weight: 500;
+  text-align: center;
 }
 
 .descrizione_i_nostri_gelati>p {
-  color: rgb(68, 68, 68);
+  color: rgb(255 111 1);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
+
 .descrizione_i_nostri_gelati {
-  max-width: 600px;
-  padding: 0 2rem;
+  max-width: 400px;
+  background: #ffffff78;
+  box-shadow: #ffffff78 0px 0px 30px 40px;
+  border-radius: 35px;
 }
+
+.dscr_left {
+  & .p_left {
+    text-align: left;
+    margin: 0 0 0;
+  }
+
+  & h2.fnt_size {
+    position: relative;
+  }
+
+  & h2.under_text {
+    color: brown;
+    position: relative;
+    top: -81px;
+    left: -1px;
+  }
+
+}
+
+.dscr_right {
+  margin: 6rem 0 0;
+
+  & .p_right {
+    text-align: right;
+  }
+
+  & h2.fnt_size {
+    position: relative;
+  }
+
+  & h2.under_text {
+    color: brown;
+    position: relative;
+    top: -49px;
+    left: -1px;
+  }
+} */
+
 
 /* region prodotti */
 

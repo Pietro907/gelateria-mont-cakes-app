@@ -14,8 +14,8 @@ import { SenzaLattosioComponent } from './page/i-nostri-gelati/senza-lattosio/se
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/homepage' },
-  { path: 'homepage', component:HomeComponent },
   { path: '', component: HomeComponent },
+  { path: 'homepage', component:HomeComponent },
   { path: 'chi_siamo', component: ChiSiamoComponent },
   { path: 'dove_siamo', component: DoveSiamoComponent },
   { path: 'i_nostri_gelati', component: INostriGelatiComponent },

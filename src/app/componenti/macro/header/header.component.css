@@ -4,7 +4,9 @@ header{
   z-index: 10;
   width: 100%;
 }
-
+.blu{
+  background: red;
+}
 .top_menu {
   display: flex;
   justify-content: space-between;
