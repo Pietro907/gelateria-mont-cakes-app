@@ -31,6 +31,8 @@
 
   & .dscr_card {
     background: none;
+    box-shadow: none;
+    border: none;
   }
 }
 
@@ -40,9 +42,10 @@
 
 .dscr_card {
   width: 80%;
-  height: calc(100% / 2);
+  height: 350px;
   background-color: #ffffffe6;
-  border-radius: 20px;
+  border: #ffffffe6 1px solid;
+  border-radius: 110px;
   margin: 4rem 0;
   padding: 0.5rem;
   text-align: center;
@@ -73,49 +76,55 @@
   & .info {
     & .front {
       position: relative;
-      bottom: 112.5px;
+      bottom: 132.5px;
       left: 0px;
       color: brown;
+      font-size: 18px;
     }
 
     & .back {
       position: relative;
       bottom: 0;
       left: 1px;
+      font-size: 18px;
+    
     }
   }
 }
 
 .dscr_right>.dscr_card {
   & .title {
-    margin: 8rem 0 0;
+    padding: 12rem 0 0;
 
     & .front {
       position: relative;
-      bottom: 49px;
+      top: 0px;
       left: 0px;
       color: brown;
     }
 
     & .back {
       position: relative;
-      bottom: 0;
-      left: 1.5px;
+      top: 48.5px;
+      left: 1px;
     }
   }
 
   & .info {
+    padding: 3rem 0;
     & .front {
       position: relative;
-      bottom: 132.5px;
+      bottom: 172.5px;
       left: 0px;
       color: brown;
+      font-size: 18px;
     }
 
     & .back {
       position: relative;
       bottom: 0;
-      left: 1.5px;
+      left: 1px;
+      font-size: 18px;
     }
   }
 }
