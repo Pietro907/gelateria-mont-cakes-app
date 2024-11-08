@@ -33,7 +33,7 @@ body {
 }
 
 .descrizione_pasticceria_artigianale>h2 {
-  color: brown;
+  color: var(--color-senza-lattosio-primary);
   font-size: 30px;
   font-weight: 600;
 }

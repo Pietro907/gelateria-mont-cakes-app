@@ -5,7 +5,7 @@
     }
 
     .testo {
-        color: brown;
+        color: var(--color-senza-lattosio-primary);
         width: 800px;
 
 

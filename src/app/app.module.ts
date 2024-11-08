@@ -27,6 +27,9 @@ import { LattosioComponent } from './page/i-nostri-gelati/lattosio/lattosio.comp
 import { SenzaLattosioComponent } from './page/i-nostri-gelati/senza-lattosio/senza-lattosio.component';
 import { CardComponent } from './page/i-nostri-gelati/lattosio/card/card.component';
 import { FooterComponent } from './componenti/macro/footer/footer.component';
+import { GoogleMap } from '@angular/google-maps';
+import { GoogleMapComponent } from "./componenti/google-map/google-map.component";
+import { RouterLinkActive } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -45,15 +48,16 @@ import { FooterComponent } from './componenti/macro/footer/footer.component';
     SenzaLattosioComponent,
     CardComponent,
     FooterComponent,
-
   ],
   imports: [
     BrowserModule,
     MatSlideToggleModule,
     AppRoutingModule,
-  ],
+    GoogleMap,
+    GoogleMapComponent,
+    ],
   providers: [
-    provideAnimationsAsync()
+    /* provideAnimationsAsync() */
   ],
   bootstrap: [AppComponent]
 })

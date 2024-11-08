@@ -1,8 +1,8 @@
 body {
     background-image: url("../../../../assets/img/5542825.jpg");
-    background-size: cover;
+    background-size: 400%;
     height: 100%;
-    padding: 0 0 5px;
+
 }
 
 .link_prodotti {
@@ -44,16 +44,11 @@ body {
     }
 }
 
-.lattosio:hover {
-    & a {
-        color: #00c5ff;
-        text-decoration: underline;
-    }
-}
+
 
 .senza_lattosio:hover {
     & a {
-        color: brown;
+        color: var(--color-senza-lattosio-primary);
         text-decoration: underline;
     }
 
@@ -61,12 +56,19 @@ body {
 
 
 
+.lattosio:hover {
+    & a {
+        color: var(--color-lattosio-primary);
+        text-decoration: underline;
+    }
+}
+
 .lattosio {
-    box-shadow: #00c5ff 0px 0px 30px 15px;
+    box-shadow: var(--color-lattosio-primary) 0px 0px 30px 15px;
 }
 
 .senza_lattosio {
-    box-shadow: brown 0px 0px 30px 15px;
+    box-shadow: var(--color-senza-lattosio-primary) 0px 0px 30px 15px;
 }
 
 .img_gusti {
@@ -86,4 +88,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+.title_page {
+    text-align: center;
+    font-size: 50px;
+    color: var(--color-lattosio-primary);
+    margin: 2rem 0 1rem;
 }

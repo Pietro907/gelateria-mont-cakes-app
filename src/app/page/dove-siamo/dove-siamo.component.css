@@ -1,11 +1,11 @@
-body {
+/* body {
     background-image: url("../../../assets/img/5542825.jpg");
     background-size: cover;
     background-position: bottom;
     height: 100vh;
     padding: 0 0 5px;
 }
-
+ */
 .background {
     max-width: 1000px;
     height: 600px;
@@ -65,7 +65,7 @@ body {
     margin: 2rem 0 0;
     padding: 0 2rem;
     text-align: center;
-    color: brown;
+    color: var(--color-senza-lattosio-primary);
     background: white;
     box-shadow: white 0 -5px 20px 20px;
     border-radius: 50%;
@@ -90,7 +90,7 @@ body {
 }
 
 .descrizione_dove_siamo> .clicca_qui {
-    color: brown;
+    color: var(--color-senza-lattosio-primary);
     text-decoration: none;
     font-weight: 500;
     font-size: large;

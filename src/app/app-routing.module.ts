@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'chi_siamo', component: ChiSiamoComponent },
   { path: 'dove_siamo', component: DoveSiamoComponent },
   { path: 'i_nostri_gelati', component: INostriGelatiComponent },
-  { path: 'lattosio', component: LattosioComponent },
+  { path: 'i_nostri_gelati/lattosio', component: LattosioComponent },
   { path: 'i_nostri_gelati/senza_lattosio', component: SenzaLattosioComponent },
   { path: 'le_torte', component: LeTorteComponent },
   { path: 'pasticceria', component: PasticceriaComponent },

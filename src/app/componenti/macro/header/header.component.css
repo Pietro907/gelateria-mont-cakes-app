@@ -4,9 +4,7 @@ header{
   z-index: 10;
   width: 100%;
 }
-.blu{
-  background: red;
-}
+
 .top_menu {
   display: flex;
   justify-content: space-between;
@@ -36,7 +34,7 @@ header{
 
 /* header loggin */
 .pre_top_menu2 {
-  background-color: brown;
+  background-color: var(--color-senza-lattosio-primary);
   height: 10px;
 }
 

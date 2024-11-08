@@ -1,55 +1,83 @@
-.card_imgs, .img_big{
+.card_imgs,
+.img_big {
     width: 250px;
     height: 200px;
     border-radius: 10px;
 }
 
-.card_imgs{
+.card_imgs {
     position: relative;
     background: #fff;
     margin: 2.5rem 0;
+    border: 5px solid var(--color-lattosio-primary);
 }
 
-.img_big{
+.img_big {
     position: absolute;
     top: 0;
     left: 0;
     perspective: 1000px;
+    border: 5px solid var(--color-lattosio-primary);
+    border-top: none;
+    border-right: none;
+    box-shadow: 0px 0px 28px 0px var(--color-lattosio-primary);
 }
 
-.img_under_big{
+.img_under_big {
     width: 250px;
     height: 70px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
+h3 {
+    text-align: center;
+    margin: 0.2rem 0;
+}
+
+p {
+    margin: 0.2rem 0;
+}
+
+span {
+width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-right: 6rem;
+}
+
 /* #region animation open/close card */
 /* sono utilizzate nel file di lattosio.ts */
 
-.img_open{
+.img_open {
     transform-origin: center bottom;
     animation: open 1s;
 }
 
 @keyframes open {
-    0%{
+    0% {
         transform: rotateX(0deg);
     }
-    100%{
+
+    100% {
         transform: rotateX(102deg);
     }
 }
 
-.img_close{
+.img_close {
     transform-origin: bottom center;
     animation: close 1s;
 }
+
 @keyframes close {
-    0%{
+    0% {
         transform: rotateX(102deg);
     }
-    100%{
+
+    100% {
         transform: rotateX(0deg);
     }
 }
