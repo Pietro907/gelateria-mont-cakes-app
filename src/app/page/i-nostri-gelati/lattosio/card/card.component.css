@@ -1,7 +1,7 @@
 .card_imgs,
 .img_big {
     width: 250px;
-    height: 200px;
+    height: 260px;
     border-radius: 10px;
 }
 
@@ -25,29 +25,27 @@
 
 .img_under_big {
     width: 250px;
-    height: 70px;
+    height: 110px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-h3 {
-    text-align: center;
-    margin: 0.2rem 0;
+.info{
+    padding: 0 0.5rem;
+    & h3 {
+        text-align: center;
+        margin: 0.2rem 0;
+    }
 }
-
-p {
-    margin: 0.2rem 0;
-}
-
-span {
-width: 100%;
-}
-ul{
+.d_flex_info{
+    list-style-type: disclosure-closed;
     display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    margin-right: 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 /* #region animation open/close card */
 /* sono utilizzate nel file di lattosio.ts */

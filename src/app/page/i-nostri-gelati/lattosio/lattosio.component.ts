@@ -129,34 +129,79 @@ export class LattosioComponent implements AfterViewInit {
       /* assegnazione informazioni delle cards */
       
       const arrayInfoCards = [
-        {
-          title: 'cioccolato al latte',
-          ingredients: ['cioccolato', ' latte', ' saccarosio'],
-        },
+        { title: 'cioccolato al latte', ingredients: ['cioccolato', ' latte', ' saccarosio'] },
         { title: 'crema', ingredients: ['uova', ' latte', ' saccarosio'] },
+        { title: 'fior di panna', ingredients: ['panna', ' latte', ' saccarosio'] },
+        { title: 'fragola', ingredients: ['fragola', ' acqua', ' saccarosio'] },
+        { title: 'variegato nutella', ingredients: ['nutella', ' latte', ' saccarosio'] },
+        { title: 'cioccolato fondente', ingredients: ['cioccolato', ' acqua', ' saccarosio'] },
+        { title: 'cremino', ingredients: ['nutella', ' nutella bianca', ' saccarosio'] },
+        { title: 'cup-cake', ingredients: ['arachide', 'burro di arachidi', 'caramello salato', ' acqua', ' saccarosio'] },
+        { title: 'limone', ingredients: ['limone', ' acqua', ' saccarosio'] },
+        { title: 'nocciola', ingredients: ['nocciola', ' latte', ' saccarosio'] },
+        { title: 'pan di stelle', ingredients: ['pan di stelle', ' latte', ' saccarosio'] },
+        { title: 'pistacchiosa', ingredients: ['pistacchio', ' latte', ' saccarosio'] },
+        { title: 'stracciatella', ingredients: ['cioccolato', ' latte', ' saccarosio'] },
+        { title: 'variegato amarena', ingredients: ['amarena', ' latte', ' saccarosio'] },
+        { title: 'fragola', ingredients: ['fragola', ' acqua', ' saccarosio'] },
+        { title: 'fragola', ingredients: ['fragola', ' acqua', ' saccarosio'] },
         { title: 'fragola', ingredients: ['fragola', ' acqua', ' saccarosio'] },
       ];
     //console.log(arrayInfoCards[1]);
 
+    const arrayInfoCardSmall = [
+     '../../../../assets/img/gusti/lattosio/cioccolato/cioccolato-small.png',
+     '../../../../assets/img/gusti/lattosio/crema/crema-small.png',
+     '../../../../assets/img/gusti/lattosio/fior-di-panna/fior-di-panna-small.png',
+     '../../../../assets/img/gusti/lattosio/fragola/fragola-small.png',
+     '../../../../assets/img/gusti/lattosio/variegato-nutella/varigato-nutella-small.png',
+     '../../../../assets/img/gusti/lattosio/cioccolata-fondente/cioccolato-fondente-small.png',
+     '../../../../assets/img/gusti/lattosio/cremino/cremino-small.png',
+     '../../../../assets/img/gusti/lattosio/cup-cakes/cup-cakes-small.png',
+     '../../../../assets/img/gusti/lattosio/limone/limone-small.png',
+     '../../../../assets/img/gusti/lattosio/nocciola/nocciola-small.png',
+     '../../../../assets/img/gusti/lattosio/pan-di-stelle/pan-di-stelle-small.png',
+     '../../../../assets/img/gusti/lattosio/pistacchiosa/pistacchio-small.png',
+     '../../../../assets/img/gusti/lattosio/stracciatella/stracciatella-small.png',
+     '../../../../assets/img/gusti/lattosio/variegato-amarena/variegato-amarena-small.png',
+    ];
+
     for (let i = 0; i < elCardLatt.length; i++) {
       const element = elCardLatt[i];
+      console.log(element.children[0].children[1]);
       if (i < elCardLatt.length) {
         const infoCard = arrayInfoCards[i];
-        const allInfoTitle = element.children[0].children[2];
+        const infoCardSmall = arrayInfoCardSmall[i];
+        const allInfoTitle = element.children[0].children[2].children[0];
         const allInfoDescr = element.children[0].children[3];
-        const allInfoList =  element.children[0].children[4].children[0];
-        //console.log(element.children[0].children[4].children[0]);
+        const allInfoList =  element.children[0].children[2].children[2];
+        const allImageSmall = element.children[0].children[1];
+        console.log(element.children[0].children[2]);
         
         allInfoTitle.innerHTML = infoCard.title.charAt(0).toUpperCase() + infoCard.title.slice(1).toLowerCase();
         allInfoList.innerHTML = '';
 
         infoCard.ingredients.forEach((ingredients) => {
+          allInfoList.classList.add('d_flex_info');
           const elLi = document.createElement('li');
-          elLi.innerText = ingredients;
           allInfoList.appendChild(elLi); 
-          elLi.style.paddingRight='2rem';
+          elLi.innerText = ingredients;
+          elLi.style.paddingRight='1rem';
         });
+
       }
     }
+
+    for (let i = 0; i < elCardLatt.length; i++) {
+      const element = elCardLatt[i];
+      if (i < arrayInfoCardSmall.length) {
+        const AllImgSmall = element.children[0].children[1] as HTMLImageElement;
+        if (AllImgSmall.tagName == 'IMG') {
+          AllImgSmall.src = arrayInfoCardSmall[i];
+          //console.log((imgAll.src = arrayImg[i]));
+        }
+      }
+    }
+
   }
 }
